@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100svh;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(193deg, #802525, #d37042);
+    background-size: 400% 400%;
+
+    -webkit-animation: GradientAnimation 17s ease infinite;
+    -moz-animation: GradientAnimation 17s ease infinite;
+    animation: GradientAnimation 17s ease infinite;
+    padding: 10%;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+@-webkit-keyframes GradientAnimation {
+    0%{background-position:81% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:81% 0%}
+}
+@-moz-keyframes GradientAnimation {
+    0%{background-position:81% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:81% 0%}
+}
+@keyframes GradientAnimation {
+    0%{background-position:81% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:81% 0%}
+}
+
+#recent-logins{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-radius: 5px;
+    background-color: rgba(45, 125, 230, 0.781);
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    height: 40%;
+    padding: 1em;
+    gap: 1em;
+    border-radius: 1em;
+    background-color: aliceblue;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 4px;
+    background-color:rgb(219, 20, 60, 0.5);
+    
+    .profile-pic{
+        display: flex;
+        justify-content: center;
+        height: 80%;
+    }
+
+    .name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+        font-size: 2dvh; 
+        font-weight: bold;
+    }
+}
+
+
+img{
+    width: 10em;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;    
+ }
+
+ .profile-pic:hover img {
+    transform: scale(1.2);
+}
+
+#login-area{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+button{
+    border-radius: 1em;
+    border: none;
+    padding: 0.5em;
+    font-family: inherit;
+    font-size: 2.5dvh;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(168, 20, 156);
+    color: white;
+    min-width: 30%;
+    max-width: 60%;
+}
+
+button:hover{
+    border: solid 3px gainsboro;
+}
+
+input{
+    border: none;
+    border-radius: 1em;
+    font-family: inherit;
+    font-size: 3dvh;
+    padding-left: 0.5em;
+    max-width: 80%;
+    color: rgb(146, 146, 146);
+}
+
+.error{
+    color: rgba(255, 255, 255, 0.993);
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+.input-section{
+    margin-left: 3em;
+    h3{
+        color:rgb(255, 255, 143);
+        font-size: 5dvh;
+    }
+    input{
+        margin-top: 1em;
+    }
+    button{
+        margin: 1em 1em;
+    }
+}
+
+#logout-section button{
+    margin-top: 2em;
+    font-size: 4dvh;
+    background-color: rgb(127, 255, 0, 0.5);
+}
+
+#message-area{
+    color: white;
+    font-size: 5dvh;
+    padding: 1em;
+    border: solid 4px white;
+}
+
+#balance-box {
+    h2{
+        color:rgb(255, 255, 143)
+        ;
+        font-size: 5dvh;
+        margin-top: 1em;
+    }
+
+    p{
+        color: blanchedalmond;
+        font-size: 9dvh; 
+    }
+    
+}
+
+#deposit-box{
+    padding-left: 3em;
+    padding-right: 3em;
+    h2{
+        font-size: 5dvh;
+        color: rgb(255, 255, 143);
+    }
+
+    p{
+        font-size: 3dvh;
+        color: blanchedalmond;
+    }
+}
+
+#withdraw-box{
+    margin-top: 1em;
+    padding: 3em 3em;
+    h2{
+        font-size: 5dvh;
+        color: rgb(255, 255, 143);
+    }
+
+    p{
+        font-size: 3dvh;
+        color: blanchedalmond;
+    }    
+}
+
+.b{
+    max-width: 50%;
+}
